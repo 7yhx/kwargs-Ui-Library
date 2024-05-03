@@ -1,0 +1,48 @@
+--aBAIXO ESTAR LIB DA NOSSA ui 
+
+local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/7yhx/kwargs_Ui_Library/main/source.lua"))()
+
+local UI = Lib:Create{
+    Theme = "Dark", -- or any other theme
+    Size = UDim2.new(0, 555, 0, 400) -- default
+ }
+ 
+ local Main = UI:Tab{
+    Name = "Main"
+ }
+ 
+ local Divider = Main:Divider{
+    Name = "Main shit"
+ }
+ 
+ local QuitDivider = Main:Divider{
+    Name = "Quit"
+ }
+-- Blox Fruits Script
+-- Autor: Microsoft Copilot
+
+-- ESP (Branco) nos jogadores
+local function ESP()
+    -- Lógica para destacar os jogadores com uma cor branca
+    -- Isso pode envolver desenhar um contorno branco ao redor dos jogadores
+end
+
+-- Auto Farm
+local function AutoFarm()
+    while true do
+        -- Lógica para coletar frutas automaticamente
+        wait(5) -- Espere 5 segundos antes de coletar novamente
+    end
+end
+
+-- Teleport
+local function Teleport()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(100, 50, 200))
+    -- Teleporta o jogador para as coordenadas (100, 50, 200)
+end
+
+-- Chame as funções conforme necessário
+ESP()
+AutoFarm()
+Teleport()
+ 
